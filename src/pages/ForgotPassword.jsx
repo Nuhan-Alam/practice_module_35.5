@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import useAuthContext from '../hooks/useAuthContext';
+import ErrorAlert from "../components/ErrorAlert";
 
 const ForgotPassword = () => {
     const {

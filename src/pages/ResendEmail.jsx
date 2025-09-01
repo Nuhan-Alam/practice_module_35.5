@@ -21,9 +21,9 @@ const ResendEmail = () => {
     try {
         const apiResponse = await resendActivation(data); 
         setResponse(apiResponse);
-      
     } catch (error) {
       console.log("Login Failed", error);
+      errorMsg
     } finally {
       setLoading(false);
     }

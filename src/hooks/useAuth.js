@@ -81,7 +81,7 @@ const useAuth = () => {
           "Another email is sent please check your Mail Box",
       };
     } catch (error) {
-      setErrorMsg(error.response.data?.detail);
+      setErrorMsg(error);
     }
   };
 
@@ -97,7 +97,7 @@ const useAuth = () => {
           "Check you mail box an Email has been sent",
       };
     } catch (error) {
-      setErrorMsg(error.response.data?.detail);
+      setErrorMsg(error);
     }
   };
 
@@ -112,7 +112,7 @@ const useAuth = () => {
         message:"Your password has been reset",
       };
     } catch (error) {
-      setErrorMsg(error.response.data?.detail);
+      setErrorMsg(error);
     }
   };
 
